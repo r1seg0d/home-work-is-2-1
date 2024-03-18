@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="main.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <h1 class="title">Расчет стоимости ремонта</h1>
+        <div class="form" id="form">
+            <label for="tilesCost">цена укладки плитки:</label>
+            <input type="text" class="product" id="tilesCost">
+            <br>
+            <label for="tiles">Кол-во услуги:</label>
+            <input type="text" class="product" id="tiles">
+            <br><br>
+            <label for="wallsCost">Цена покраски стен:</label>
+            <input type="text" class="product" id="wallsCost">
+            <br>
+            <label for="walls">Кол-во услуги:</label>
+            <input type="text" class="product" id="walls">
+            <br><br>
+            <label for="plumbingCost">Цена установки сантехники:</label>
+            <input type="text" class="product" id="plumbingCost">
+            <br>
+            <label for="plumbing">Кол-во услуги:</label>
+            <input type="text" class="product" id="plumbing">
+            <br><br>
+            <button id="saveBtn" onclick="calculate()">Расcчитать</button>
+        </div>
+        <div id="result"></div>
+    </div>
+</body>
+</html>
